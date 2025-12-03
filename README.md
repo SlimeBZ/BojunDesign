@@ -13,6 +13,6 @@ npm run deploy  # publish dist to GitHub Pages
 ```
 
 ## Notes
-- Router uses `BrowserRouter` with `basename="/bojundesign"`.
+- Router uses `BrowserRouter` with `basename="/BojunDesign"`.
 - Tailwind is configured for IBM Plex Mono and a black/white aesthetic.
 - No binary media is stored in the repo; project thumbnails use dynamic dummyimage.com placeholders and demo loops stream from Coverr. Empty `public/media` and `public/thumbs` directories remain for future assets.

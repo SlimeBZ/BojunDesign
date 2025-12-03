@@ -26,7 +26,7 @@ const AppRoutes = () => {
 };
 
 const AppRouter = () => (
-  <BrowserRouter basename="/bojundesign">
+  <BrowserRouter basename="/BojunDesign">
     <AppRoutes />
   </BrowserRouter>
 );
