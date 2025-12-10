@@ -6,6 +6,8 @@ export type ProjectTag =
   | 'Generative'
   | 'Live Performance'
   | 'Installation'
+  | 'Interactive'
+  | 'Web Design'
   | 'Collaboration';
 
 export interface ProjectLinkSet {
