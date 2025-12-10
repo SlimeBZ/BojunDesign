@@ -39,6 +39,7 @@ export const projects: Project[] = [
     year: 2025,
     thumbnail: thumb('Sphere Loop'),
     mediaType: 'image',
+    mediaUrl: 'https://www.youtube.com/watch?v=_SEBO2d2JMI',
     tags: ['TouchDesigner', 'Interactive'],
     shortDescription: 'Minimalist TD Music Visualizer made with Audio Interactivity',
     techStack: ['TouchDesigner'],
