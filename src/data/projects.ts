@@ -1,7 +1,7 @@
 import { Project } from '../types/project';
 
 const projectVideo = (slug: string) =>
-  `https://cdn.jsdelivr.net/gh/SlimeBZ/BojunDesign@main/docs/video/${slug}.mp4`;
+  `https://github.com/SlimeBZ/BojunDesign/raw/main/docs/video/${slug}.mp4`;
 
 export const projects: Project[] = [
   {
