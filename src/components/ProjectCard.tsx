@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Project } from '../types/project';
+import VideoLoop from './VideoLoop';
 
 interface ProjectCardProps {
   project: Project;
@@ -21,12 +22,20 @@ const ProjectCard = ({ project, index = 0 }: ProjectCardProps) => {
         className="block border border-neutral-800 hover:border-neutral-500 rounded-2xl overflow-hidden bg-black transition-colors"
       >
         <div className="aspect-[4/3] bg-neutral-900 overflow-hidden">
-          <img
-            src={project.thumbnail}
-            alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03]"
-            loading="lazy"
-          />
+          {project.mediaType === 'video' ? (
+            <VideoLoop
+              src={project.thumbnail || project.mediaUrl}
+              className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03]"
+              preload="metadata"
+            />
+          ) : (
+            <img
+              src={project.thumbnail}
+              alt={project.title}
+              className="w-full h-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03]"
+              loading="lazy"
+            />
+          )}
         </div>
         <div className="p-4 sm:p-5 space-y-2">
           <div className="flex items-center justify-between text-xs uppercase tracking-[0.1em] text-neutral-400">
