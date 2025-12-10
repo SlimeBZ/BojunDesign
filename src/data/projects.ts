@@ -1,29 +1,29 @@
 import { Project } from '../types/project';
 
-const thumb = (label: string) => `https://dummyimage.com/960x540/000/ffffff&text=${encodeURIComponent(label)}`;
-// const loop = (id: string) => `https://cdn.coverr.co/videos/${id}/1080p.mp4`;
+const projectVideo = (slug: string) =>
+  `https://cdn.jsdelivr.net/gh/SlimeBZ/BojunDesign@main/docs/video/${slug}.mp4`;
 
 export const projects: Project[] = [
   {
-  slug: 'touch-to-start',
-  title: 'Touch to Start',
-  year: 2024,
-  thumbnail: thumb('Touch to Start'),
-  mediaType: 'image', // just to satisfy the current type
-  mediaUrl: thumb('Touch to Start'),
-  tags: ['Installation'],
-  shortDescription: 'Interactive p5.js piece where visitors trigger evolving visuals with touch.',
-  techStack: ['p5.js', 'JavaScript'],
-  context: 'Final project developed as an interactive kiosk-style experience.',
-  processNotes: 'Focused on touch-first interaction and bold typography for gallery environments.',
-},
+    slug: 'touch-to-start',
+    title: 'Touch to Start',
+    year: 2024,
+    thumbnail: projectVideo('touch-to-start'),
+    mediaType: 'video',
+    mediaUrl: projectVideo('touch-to-start'),
+    tags: ['Installation'],
+    shortDescription: 'Interactive p5.js piece where visitors trigger evolving visuals with touch.',
+    techStack: ['p5.js', 'JavaScript'],
+    context: 'Final project developed as an interactive kiosk-style experience.',
+    processNotes: 'Focused on touch-first interaction and bold typography for gallery environments.',
+  },
   {
     slug: 'gold-spirit',
     title: 'Gold Spirit',
     year: 2025,
-    thumbnail: thumb('Gold Spirit'),
-    mediaType: 'web',
-    mediaUrl: 'https://slimebz.github.io/p5js-finals/',
+    thumbnail: projectVideo('gold-spirit'),
+    mediaType: 'video',
+    mediaUrl: projectVideo('gold-spirit'),
     tags: ['TouchDesigner', 'Generative', 'Web Design'],
     shortDescription: 'TD Music Visualizer made with Particle 3D effect and Audio Interactivity',
     techStack: ['TouchDesigner', 'TOPs', 'TD'],
@@ -37,9 +37,9 @@ export const projects: Project[] = [
     slug: 'sphere-loop',
     title: 'Sphere Loop',
     year: 2025,
-    thumbnail: thumb('Sphere Loop'),
-    mediaType: 'image',
-    mediaUrl: 'https://www.youtube.com/watch?v=_SEBO2d2JMI',
+    thumbnail: projectVideo('sphere-loop'),
+    mediaType: 'video',
+    mediaUrl: projectVideo('sphere-loop'),
     tags: ['TouchDesigner', 'Interactive'],
     shortDescription: 'Minimalist TD Music Visualizer made with Audio Interactivity',
     techStack: ['TouchDesigner'],

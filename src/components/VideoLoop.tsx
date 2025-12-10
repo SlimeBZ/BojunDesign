@@ -1,9 +1,10 @@
 interface VideoLoopProps {
   src: string;
   className?: string;
+  preload?: 'none' | 'metadata' | 'auto';
 }
 
-const VideoLoop = ({ src, className }: VideoLoopProps) => {
+const VideoLoop = ({ src, className, preload = 'metadata' }: VideoLoopProps) => {
   return (
     <video
       className={className}
@@ -13,6 +14,7 @@ const VideoLoop = ({ src, className }: VideoLoopProps) => {
       muted
       playsInline
       controls={false}
+      preload={preload}
     />
   );
 };

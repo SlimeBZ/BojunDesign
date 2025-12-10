@@ -31,20 +31,19 @@ const ProjectDetail = () => {
         </div>
       </div>
 
-          <div className="relative aspect-video overflow-hidden rounded-2xl border border-neutral-800 bg-black">
-            {project.slug === 'touch-to-start' ? (
-              <P5FinalsEmbed />
-            ) : project.mediaType === 'video' ? (
-              <VideoLoop src={project.mediaUrl} className="w-full h-full object-cover" />
-            ) : (
-              <img
-                src={project.mediaUrl}
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
-            )}
-          </div>
-
+      <div className="relative aspect-video overflow-hidden rounded-2xl border border-neutral-800 bg-black">
+        {project.slug === 'touch-to-start' ? (
+          <P5FinalsEmbed />
+        ) : project.mediaType === 'video' ? (
+          <VideoLoop src={project.mediaUrl} className="w-full h-full object-cover" preload="auto" />
+        ) : (
+          <img
+            src={project.mediaUrl}
+            alt={project.title}
+            className="w-full h-full object-cover"
+          />
+        )}
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-sm text-neutral-200">
         <div className="md:col-span-3 space-y-6">
