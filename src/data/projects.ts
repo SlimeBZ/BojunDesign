@@ -1,7 +1,7 @@
 import { Project } from '../types/project';
 
 const projectVideo = (slug: string) =>
-  `https://github.com/SlimeBZ/BojunDesign/raw/main/docs/video/${slug}.mp4`;
+  `${import.meta.env.BASE_URL}media/${slug}.mp4`;
 
 export const projects: Project[] = [
   {
