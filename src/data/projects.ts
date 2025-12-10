@@ -1,7 +1,7 @@
 import { Project } from '../types/project';
 
 const thumb = (label: string) => `https://dummyimage.com/960x540/000/ffffff&text=${encodeURIComponent(label)}`;
-const loop = (id: string) => `https://cdn.coverr.co/videos/${id}/1080p.mp4`;
+// const loop = (id: string) => `https://cdn.coverr.co/videos/${id}/1080p.mp4`;
 
 export const projects: Project[] = [
   {
@@ -39,7 +39,6 @@ export const projects: Project[] = [
     year: 2025,
     thumbnail: thumb('Sphere Loop'),
     mediaType: 'image',
-    mediaUrl: thumb('Monolith Kinetics — Still'),
     tags: ['TouchDesigner', 'Interactive'],
     shortDescription: 'Minimalist TD Music Visualizer made with Audio Interactivity',
     techStack: ['TouchDesigner'],
