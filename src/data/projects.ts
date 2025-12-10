@@ -5,22 +5,18 @@ const loop = (id: string) => `https://cdn.coverr.co/videos/${id}/1080p.mp4`;
 
 export const projects: Project[] = [
   {
-    slug: 'audio-reactive-orbit',
-    title: 'Audio Reactive Orbit',
-    year: 2024,
-    thumbnail: thumb('Audio Reactive Orbit'),
-    mediaType: 'video',
-    mediaUrl: loop('coverr-fireworks-hd-1657'),
-    tags: ['TouchDesigner', 'Audio Reactive', 'Generative'],
-    shortDescription: 'A kinetic light sculpture driven by live electronic sets, translating frequency bands into orbital motion.',
-    techStack: ['TouchDesigner', 'GLSL', 'CHOPs', 'Kinect'],
-    context: 'Performed at Underground Echoes, Shanghai.',
-    processNotes: 'Built a custom GLSL feedback system to morph geometry with side-chained audio envelopes and MIDI triggers.',
-    links: {
-      fullVideo: 'https://vimeo.com/placeholder-orbit',
-      instagram: 'https://instagram.com/bojundesign',
-    },
-  },
+  slug: 'touch-to-start',
+  title: 'Touch to Start',
+  year: 2024,
+  thumbnail: thumb('Touch to Start'),
+  mediaType: 'image', // just to satisfy the current type
+  mediaUrl: thumb('Touch to Start'),
+  tags: ['Installation'],
+  shortDescription: 'Interactive p5.js piece where visitors trigger evolving visuals with touch.',
+  techStack: ['p5.js', 'JavaScript'],
+  context: 'Final project developed as an interactive kiosk-style experience.',
+  processNotes: 'Focused on touch-first interaction and bold typography for gallery environments.',
+},
   {
     slug: 'modular-lattice',
     title: 'Modular Lattice',
