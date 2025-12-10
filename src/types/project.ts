@@ -1,4 +1,4 @@
-export type ProjectMediaType = 'video' | 'image';
+export type ProjectMediaType = 'video' | 'image' | 'web';
 
 export type ProjectTag =
   | 'TouchDesigner'
