@@ -53,7 +53,7 @@ const Contact = () => {
       </form>
 
       <div className="text-sm text-neutral-400 space-y-1">
-        <p>Email: <a href="mailto:hello@bojundesign.studio" className="underline">hello@bojundesign.studio</a></p>
+        <p>Email: <a href="mailto:bojunzhangsus@gmail.com" className="underline">bojunzhangsus@gmail.com</a></p>
         <p>Instagram: <a href="https://instagram.com/bojundesign" className="underline" target="_blank" rel="noreferrer">@bojundesign</a></p>
       </div>
     </motion.div>
